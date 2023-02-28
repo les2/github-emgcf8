@@ -1,0 +1,8 @@
+<div class="wrapper" ...attributes>
+{{#if @value}}
+	<input type="color" value={{ @value }} {{on 'input' this.onInput}} />
+  <button {{on 'click' this.clear}}>Clear</button>
+{{else}}
+   <button {{on 'click' this.add}}>Add</button>
+{{/if}}
+</div>
